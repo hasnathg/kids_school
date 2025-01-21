@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .nav-link{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-size: 20;
+    font-weight: 700;
+  }
+  .nav-btn{
+    font-size: 20;
+    font-weight: 600;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 172px;
+    height: 40px;
+  }
+
