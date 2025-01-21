@@ -13,6 +13,8 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  /* nav bar styles */
   .navbar{
     display: flex;
     justify-content: space-around;
@@ -43,4 +45,44 @@
     width: 172px;
     height: 40px;
   }
+
+  /* banner styles */
+  .banner{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+  }
+  .ban-head{
+    font-size: 56px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+  .ban-vision{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 24px;
+  }
+  .ban-btn{
+    background-color: black;
+    color: white;
+    width: 172px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+
+  }
+  #ban-head1{
+    color: orange;
+  }
+  #ban-head2{
+    color: skyblue;
+  }
+  /* .ban-img{
+    width: 532px;
+   } */
+  .ban-description{
+    /* width: 600px; */
+    padding-top: 50px;
+    } 
 
