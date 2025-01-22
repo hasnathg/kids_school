@@ -225,49 +225,59 @@
 
 /* Common styles for all cards */
 
+
+
+/* Ensure each card container is positioned relative */
 .stories-card1, 
 .stories-card2, 
 .stories-card3, 
 .stories-card4, 
-.stories-card5 { 
-  position: relative;
-  background: #fff;
-  border-radius: 10px;
-  /* overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
-  overflow: visible;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.stories-card5 {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-
-.stories-btn1{ 
-  position: absolute;
-  bottom: -20px; 
-  left: 20px;
-  background: #40d9ac;
-  color: #fff;
-  padding: 8px 20px;
-  border: none;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-
-
+/* Ensure images are block and fill the width */
 .stories-card1 img, 
 .stories-card2 img, 
 .stories-card3 img, 
 .stories-card4 img, 
-.stories-card5 img { 
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  position: relative;
-  z-index: 0; 
-} 
+.stories-card5 img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Button styling to overlap the image */
+.stories-card1 .stories-btn1,
+.stories-card2 .stories-btn1,
+.stories-card3 .stories-btn1,
+.stories-card4 .stories-btn1,
+.stories-card5 .stories-btn1 {
+    position: absolute;
+    bottom: 10px;  /* Move button above the bottom edge */
+    left: 20px;  /* Distance from left */
+    background: #40d9ac;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* z-index: 2; Ensure button stays on top */
+    transform: translate(-5%, -180%); /* Moves it up to overlap image */
+}
+
+
+
+
+
+
 
 
 
@@ -318,3 +328,58 @@
  }
 
 
+ /* footer styles */
+
+ .logo{
+  display: flex;
+  
+ }
+ .logo-description{
+  display: flex;
+  flex-direction: column;
+ }
+ .description{
+  font-size: 18px;
+  font-weight: 400;
+ }
+ .footer-container{
+  background-color: #01ACFD;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+ }
+
+ .logo-top1{
+  display: flex;
+ }
+ .menu{
+  display: flex;
+  flex-direction: column;
+  /* padding: 15px; */
+ }
+ .menu-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 20;
+  font-weight: 700;
+
+}
+.social-media{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#touch{
+  font-size: 20px;
+}
+.social-media-link{
+  display: flex;
+  list-style: none;
+}
